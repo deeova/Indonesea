@@ -13,7 +13,7 @@ const HeritagePart = () => {
           boats.  Sulawesi boatbuilders spent years handcrafting the vessels on
           the beach, a labor-intensive but methodical process guided by ritual.
         </p>
-        <img src="/svg/pattern.svg" alt="pattern" className="absolute right-[20px] -top-[9.5rem] lg:right-0 lg:-top-60 w-[88px] lg:w-[140px]" />
+        <img src="/svg/pattern.svg" alt="pattern" className="absolute right-[20px] -top-[12.5rem] lg:right-0 lg:-top-60 w-[88px] lg:w-[140px]" />
       </div>
       <div className="lg:w-[1082px] mx-auto w-full px-5 lg:px-0">
         <div className="relative flex flex-col gap-[90px] overflow-hidden pt-[90px] h-full">

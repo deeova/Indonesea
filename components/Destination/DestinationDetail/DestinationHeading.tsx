@@ -28,7 +28,7 @@ const options = {
 };
 const DestinationHeading = ({title, desc, img, data}: Props) => {
   return (
-    <section className=" py-100 lg:py-150 relative">
+    <section className="py-100 lg:py-150 relative">
       <div className="w-full px-5 lg:px-0 lg:w-[1082px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
           <div className="flex flex-col gap-5">
