@@ -15,9 +15,8 @@ const Hero = () => {
           <div className="lg:text-[23px] lg:leading-7 lg:tracking-[1.84px] text-lg">
             Charter your Indonesea’s private phinisi and embark on
             <br />
-            an unforgettable journey to discover
-            <br />
-            Indonesia's heritage.
+            an unforgettable journey to discover Indonesia's heritage
+            <br /> and protecting it at the same time.
           </div>
         </div>
       </div>
