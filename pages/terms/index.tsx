@@ -1,9 +1,9 @@
-import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import LayoutTerm from "@/components/Term & Policy/LayoutTerm";
 
 const index = () => {
   return (
-    <>
+    <LayoutTerm>
       <main>
         <section className="bg-terms bg-cover bg-no-repeat bg-[center_bottom]">
           <div className="w-full h-[438px] flex flex-col justify-center items-center px-5 gap-[135px] lg:px-0 relative">
@@ -211,8 +211,7 @@ const index = () => {
           <p>This document was last updated on January 05, 2024.</p>
         </article>
       </main>
-      <Footer />
-    </>
+    </LayoutTerm>
   );
 };
 
