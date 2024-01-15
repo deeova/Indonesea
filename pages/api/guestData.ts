@@ -1,0 +1,23 @@
+export const guestData = [
+    { name: "Guest", data: "1" },
+    { name: "Guests", data: "2" },
+    { name: "Guests", data: "3" },
+    { name: "Guests", data: "4" },
+    { name: "Guests", data: "5" },
+    { name: "Guests", data: "6" },
+    { name: "Guests", data: "7" },
+    { name: "Guests", data: "8" },
+    { name: "Guests", data: "9" },
+    { name: "Guests", data: "10" },
+    { name: "Guests", data: "11" },
+    { name: "Guests", data: "12" },
+    { name: "Guests", data: "13" },
+    { name: "Guests", data: "14" },
+    { name: "Guests", data: "15" },
+    { name: "Guests", data: "16" },
+    { name: "Guests", data: "17" },
+    { name: "Guests", data: "18" },
+    { name: "Guests", data: "19" },
+    { name: "Guests", data: "20+" },
+
+]

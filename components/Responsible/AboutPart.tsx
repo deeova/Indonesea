@@ -30,7 +30,7 @@ const AboutPart = () => {
                 </div>
               ))}
             </div>
-            <Link href="/">
+            <Link href="/about-us">
               <div className="bg-btn text-white tracking-wider p-4 w-full lg:w-fit text-center">
                 ABOUT US
               </div>

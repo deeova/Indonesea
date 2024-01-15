@@ -39,7 +39,7 @@ const HeritagePart = () => {
                 className="w-[52px] h-[52px]"
               />
             </div>
-            <div className="order-1 w-full lg:w-5/12 gap-5 flex flex-col ">
+            <div className="order-1 w-full lg:w-5/12 gap-5 flex flex-col lg:justify-center ">
               <h3 className="text-[40px] leading-[48px] text-white">1930</h3>
               <img
                 src="/background/timeline-left.png"
@@ -78,7 +78,7 @@ const HeritagePart = () => {
                 className="w-[52px] h-[52px]"
               />
             </div>
-            <div className="order-1 w-full lg:w-5/12 gap-5 flex flex-col">
+            <div className="order-1 w-full lg:w-5/12 gap-5 flex flex-col lg:justify-center">
               <h3 className="text-[40px] leading-[48px] text-white">1970</h3>
               <img
                 src="/background/timeline-right.png"
@@ -115,7 +115,7 @@ const HeritagePart = () => {
                 className="w-[52px] h-[52px]"
               />
             </div>
-            <div className="order-1 w-full lg:w-5/12 gap-5 flex flex-col">
+            <div className="order-1 w-full lg:w-5/12 gap-5 flex flex-col lg:justify-center">
               <h3 className="text-[40px] leading-[48px] text-white">2017</h3>
               <img
                 src="/background/timeline-left-2.png"

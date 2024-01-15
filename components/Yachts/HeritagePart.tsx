@@ -15,7 +15,7 @@ const HeritagePart = () => {
             with us and discover Indonesia's heritage from the deck of a
             timeless Phinisi.
           </p>
-          <Link href="/" className="">
+          <Link href="/heritage" className="">
             <div className="bg-btn text-white tracking-wider p-4 lg:w-fit w-full text-center">
               LEARN ABOUT PHINISI HERITAGE
             </div>

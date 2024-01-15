@@ -35,7 +35,7 @@ const PartnerPart = () => {
                 />
               ))}
             </div>
-            <Link href="/">
+            <Link href="/responsible">
               <div className="bg-btn text-white tracking-widest p-4 text-center w-full lg:w-fit">
                 LEARN ABOUT OUR MISSION
               </div>
