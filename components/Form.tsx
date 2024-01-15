@@ -116,30 +116,45 @@ const Form = ({isOpen, onClose}: Props) => {
     return Object.keys(tempErrors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleEmail = async () => {
+    try {
+      setLoading(true);
+  
+      const res = await fetch("/api/sendForm", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData), // Include formData in the request body
+      });
+  
+      if (!res.ok) {
+        throw new Error(`HTTP error! Status: ${res.status}`);
+      }
+  
+      const responseData = await res.json();
+      console.log(responseData);
+    } catch (error) {
+      console.error("Error:", (error as Error).message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (validate()) {
-      console.log("Submitted Data:", formData);
-
-      // Simulating a successful asynchronous operation (e.g., an API call)
-      setTimeout(() => {
-        // Display a success message
+      try {
+        setLoading(true);
+        await handleEmail();
         alert("Thank you for sending the data!");
-
-        // Clear the form and errors after submission
-        setFormData({
-          name: "",
-          email: "",
-          phoneNumber: "",
-          message: "",
-          date: "",
-          countryCode: "",
-          guest: "",
-        });
         setErrors({});
         window.location.reload();
-
-      }, 1000); // Simulating a delay for demonstration purposes
+      } catch (error) {
+        console.log("Error submitting form:", error);
+      } finally {
+        setLoading(false);
+      }
     } else {
       console.log("Form has errors.");
     }
@@ -147,9 +162,9 @@ const Form = ({isOpen, onClose}: Props) => {
 
   useEffect(() => {
     if (isOpen) {
-      document.body.style.overflow = "hidden"; // Disable scrolling when the modal is open
+      document.body.style.overflow = "hidden"; 
     } else {
-      document.body.style.overflow = "auto"; // Enable scrolling when the modal is closed
+      document.body.style.overflow = "auto"; 
     }
   }, [isOpen]);
   return (
@@ -342,6 +357,7 @@ const Form = ({isOpen, onClose}: Props) => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
+                placeholder="Let us know more details so that we can tailor your escape."
                 className={`mt-1 p-2 w-full border ${
                   errors.message ? "border-red-500" : "border-gray-300"
                 } rounded`}

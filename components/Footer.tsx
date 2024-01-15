@@ -25,26 +25,26 @@ const Footer = () => {
             </div>
           </Link>
           <div>
-            <Link href="/">
+            <a href="https://api.whatsapp.com/send?phone=+6287861854989&text=Hi">
               <div className="text-white flex flex-row gap-3 items-center">
                 <img src="/svg/wa.svg" alt="" className="w-5 h-5" />
                 +62 878 6185 4989
               </div>
-            </Link>
-            <Link href="/">
+            </a>
+            <a href="mailto:info@indonesea.com">
               <div className="text-white flex flex-row gap-3 items-center">
                 <img src="/svg/envelope.svg" alt="" className="w-5 h-5" />
                 info@indonesea.com
               </div>
-            </Link>
+            </a>
           </div>
           <div className="flex flex-row gap-2">
-            <Link href="/">
+            <a href="www.instagram.com">
               <img src="/svg/instagram.svg" alt="" className="h-8" />
-            </Link>
-            <Link href="/">
+            </a>
+            <a href="www.facebook.com">
               <img src="/svg/facebook.svg" alt="" className="h-8" />
-            </Link>
+            </a>
           </div>
         </div>
       </div>

@@ -6,16 +6,11 @@ import * as https from "https";
 type SearchData = {
   name: string;
   email: string;
-  whatsapp: string;
-  dj: string;
-  sound: string;
-  alcohol: string;
-  chef: string;
-  light: string;
-  food: string;
-  date: string;
-  guest: string;
+  phoneNumber: string;
   message: string;
+  date: string;
+  countryCode: string;
+  guest: string;
 };
 
 export default async function Handler(
@@ -27,13 +22,8 @@ export default async function Handler(
     const {
       name,
       email,
-      whatsapp,
-      dj,
-      sound,
-      alcohol,
-      chef,
-      light,
-      food,
+      phoneNumber,
+      countryCode,
       date,
       guest,
       message,
@@ -42,13 +32,8 @@ export default async function Handler(
     const requestData = {
       name,
       email,
-      whatsapp,
-      dj,
-      sound,
-      alcohol,
-      chef,
-      light,
-      food,
+      phoneNumber,
+      countryCode,
       date,
       guest,
       message,
@@ -57,7 +42,7 @@ export default async function Handler(
     const config = {
       method: "post",
       maxBodyLength: Infinity,
-      url: "http://api.bohememansion.com/api/",
+      url: "http://api.indonesea.com/api/",
       headers: {
         "Content-Type": "application/json",
       },
