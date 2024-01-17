@@ -334,7 +334,7 @@ const Form = ({isOpen, onClose}: Props) => {
                 {guestData.map((dataGuest) => (
                   <option
                     key={`country_${dataGuest.name}_${dataGuest.data}`}
-                    value={`${dataGuest.name} ${dataGuest.data}`}
+                    value={dataGuest.data}
                   >
                   {dataGuest.data}
                   </option>
