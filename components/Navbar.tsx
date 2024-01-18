@@ -12,7 +12,11 @@ import {
   SheetTrigger,
   SheetClose,
 } from "@/components/ui/sheet";
+
 import {FaChevronRight} from "react-icons/fa6";
+import Image from "next/image";
+import { Lang } from "./Lang";
+import { Contact } from "./Contact";
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -81,7 +85,7 @@ const Navbar = () => {
                   className={`${isSticky ? "block w-[195px]" : "hidden"}`}
                 />
               </Link>
-              <ul className="flex gap-10 tracking-[0.5px] text-white uppercase">
+              <ul className="flex gap-10 tracking-[0.5px] items-center text-white uppercase">
                 {navLink &&
                   Array.isArray(navLink) &&
                   navLink.map((item) => (
@@ -241,6 +245,12 @@ const Navbar = () => {
                       )}
                     </li>
                   ))}
+                <li className={`${isSticky ? "py-5" : "py-0"}`}>
+                  <Contact />
+                </li>
+                <li className={`${isSticky ? "py-5" : "py-0"}`}>
+                  <Lang />
+                </li>
               </ul>
             </div>
           </div>
