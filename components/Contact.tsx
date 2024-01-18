@@ -42,7 +42,12 @@ import { formSchema } from "@/schemas";
 import { FormError } from "./FormError";
 import { FormSuccess } from "./FormSuccess";
 
-export const Contact = () => {
+interface Props {
+    title: string
+    classname: any
+}
+
+export const Contact = ({classname, title} : Props) => {
     const [isPending, startTransition] = useTransition();
     const [error, setError] = useState<string | undefined>("");
     const [success, setSuccess] = useState<string | undefined>("");
@@ -99,7 +104,7 @@ export const Contact = () => {
     }
     return (
         <Dialog open={open}>
-            <DialogTrigger onClick={() => setOpen(true)}>CONTACT</DialogTrigger>
+            <DialogTrigger onClick={() => setOpen(true)} className={classname}>{title}</DialogTrigger>
             <DialogContent className="bg-main/50 backdrop-blur-sm p-5 border-0 !rounded-none">
             <DialogClose asChild>
                 <Button onClick={() => setOpen(false)} className="absolute right-6 top-6 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-none focus:ring-ring focus:ring-offset- disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">

@@ -246,7 +246,7 @@ const Navbar = () => {
                     </li>
                   ))}
                 <li className={`${isSticky ? "py-5" : "py-0"}`}>
-                  <Contact />
+                  <Contact title="CONTACT" classname=""/>
                 </li>
                 <li className={`${isSticky ? "py-5" : "py-0"}`}>
                   <Lang />
